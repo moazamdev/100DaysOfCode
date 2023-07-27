@@ -13,14 +13,13 @@ import ToggleChild from "./components/toggle-child";
 const App = () => {
 	return (
 		<>
-			<Toggle
-				render={({ 
-					isToggled = false, 
-					toggle }) => (
-					<ToggleChild 
-						isToggled={isToggled} 
-						toggle={toggle} 
-					/>
+			{/* Day 4 */}
+			
+
+			{/* Day 1 & 2 & 3 */}
+			{/* <Toggle
+				render={({ isToggled = false, toggle }) => (
+					<ToggleChild isToggled={isToggled} toggle={toggle} />
 				)}
 			/>
 			<MouseTracker
@@ -29,7 +28,7 @@ const App = () => {
 						Mouse Position: {mousePosition.x}, {mousePosition.y}
 					</h1>
 				)}
-			/>
+			/> */}
 
 			{/* <Amount>
 				{(amount) => (
@@ -39,14 +38,14 @@ const App = () => {
 					</>
 				)}
 			</Amount> */}
-			<Amount
+			{/* <Amount
 				render={(amount) => (
 					<>
 						<Euro amount={amount} />
 						<Pound amount={amount} />
 					</>
 				)}
-			/>
+			/> */}
 
 			{/* <ComplexList /> */}
 			{/* <NestedList /> */}
