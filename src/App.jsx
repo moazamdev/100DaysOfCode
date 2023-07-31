@@ -14,18 +14,22 @@ import RefComponent from "./components/day4&5/ref-with-dom";
 import VideoPlayer from "./components/day4&5/play-pause-video";
 import FocusInput from "./components/day4&5/focus-the-input";
 import CatFriends from "./components/day4&5/scroll-image-carousel";
+import Todo from "./components/day7/todoapp";
 
 const App = () => {
 	return (
 		<>
+			{/* Day 7 */}
+			<Todo />
+
 			{/* Day 4 & 5 */}
-			<RefComponent />
+			{/* <RefComponent /> */}
 
-			<VideoPlayer />
+			{/* <VideoPlayer /> */}
 
-			<FocusInput />
+			{/* <FocusInput /> */}
 
-			<CatFriends />
+			{/* <CatFriends /> */}
 
 			{/* Day 1 & 2 & 3 */}
 			{/* <Toggle
