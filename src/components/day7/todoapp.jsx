@@ -6,23 +6,32 @@ const TODOS = [
 ];
 
 const fetchData = () => {
-    return { data: TODOS, isLoading: false };
+    return { data: null, isLoading: false };
 };
 
-const withHigherOrderComponent = (Component) => {
-    // props here are the props of the EnhancedTodoList
-    // we want to pass the props of the EnhancedTodoList to the BaseTodoList
-    // so we are returning a function that takes the props of the EnhancedTodoList
-    // and returns the BaseTodoList with the props of the EnhancedTodoList
-    // and also checking the props for edge cases
+const withConditionalFeedback = ({ loadingFeedback, noDataFeedback, dataEmptyFeedback}) => (Component) => {
     return (props) => {
-        if (props.isLoading) return <div>Loading data.</div>;
-        if (!props.data) return <div>No data loaded yet.</div>;
-        if (!props.data.length) return <div>Data is empty.</div>;
+        if (props.isLoading) return <div>{ loadingFeedback || "Loading data."}</div>;
+        if (!props.data) return <div>{ noDataFeedback || "No data loaded yet."}</div>;
+        if (!props.data.length) return <div>{ dataEmptyFeedback || "Data is empty."}</div>;
 
         return <Component {...props} />;
     }
 }
+// const withHigherOrderComponent = (Component) => {
+//     // props here are the props of the EnhancedTodoList
+//     // we want to pass the props of the EnhancedTodoList to the BaseTodoList
+//     // so we are returning a function that takes the props of the EnhancedTodoList
+//     // and returns the BaseTodoList with the props of the EnhancedTodoList
+//     // and also checking the props for edge cases
+//     return (props) => {
+//         if (props.isLoading) return <div>Loading data.</div>;
+//         if (!props.data) return <div>No data loaded yet.</div>;
+//         if (!props.data.length) return <div>Data is empty.</div>;
+
+//         return <Component {...props} />;
+//     }
+// }
 const Todo = () => {
     const { data, isLoading } = fetchData();
 
@@ -51,6 +60,13 @@ const TodoItem = ({ item }) => {
 // so here we are passing the BaseTodoList to the withHigherOrderComponent
 // and then we are passing the props (of EnhancedTodoList) to the BaseTodoList
 //         return <Component {...props} />;
-const EnhancedTodoList = withHigherOrderComponent(BaseTodoList);
+// const EnhancedTodoList = withHigherOrderComponent(BaseTodoList);
+
+
+const EnhancedTodoList = withConditionalFeedback({
+    loadingFeedback: 'Loading Todos.',
+    noDataFeedback: 'No Todos loaded yet.',
+    dataEmptyFeedback: 'Todos are empty.',
+  })( BaseTodoList);
 
 export default Todo;
