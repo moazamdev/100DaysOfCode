@@ -18,12 +18,14 @@ import React from "react";
 // import Todo2 from "./components/day7/composition-todoapp";
 
 import AsyncStateButton from "./components/day8/async-state-button";
+import ToggleEffect from "./components/day8/toggleEffect";
 
 const App = () => {
 	return (
 		<>
 			{/* Day 8 */}
 			<AsyncStateButton/>
+			<ToggleEffect />
 
 			{/* Day 7 */}
 			{/* <Todo2 /> */}
