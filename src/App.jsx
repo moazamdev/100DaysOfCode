@@ -10,18 +10,23 @@ import React from "react";
 // import Toggle from "./components/toggle";
 // import ToggleChild from "./components/toggle-child";
 
-import RefComponent from "./components/day4&5/ref-with-dom";
-import VideoPlayer from "./components/day4&5/play-pause-video";
-import FocusInput from "./components/day4&5/focus-the-input";
-import CatFriends from "./components/day4&5/scroll-image-carousel";
-import Todo from "./components/day7/todoapp";
-import Todo2 from "./components/day7/composition-todoapp";
+// import RefComponent from "./components/day4&5/ref-with-dom";
+// import VideoPlayer from "./components/day4&5/play-pause-video";
+// import FocusInput from "./components/day4&5/focus-the-input";
+// import CatFriends from "./components/day4&5/scroll-image-carousel";
+// import Todo from "./components/day7/todoapp";
+// import Todo2 from "./components/day7/composition-todoapp";
+
+import AsyncStateButton from "./components/day8/async-state-button";
 
 const App = () => {
 	return (
 		<>
+			{/* Day 8 */}
+			<AsyncStateButton/>
+
 			{/* Day 7 */}
-			<Todo2 />
+			{/* <Todo2 /> */}
 
 			{/* Day 4 & 5 */}
 			{/* <RefComponent /> */}
