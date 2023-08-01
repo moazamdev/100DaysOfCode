@@ -5,14 +5,11 @@ const TimerComponent = () => {
 
     // cleanup
     React.useEffect(() => {
-        const interval = setInterval(() => setTimer(timer + 1), 1000);
-        console.log("timer incremented")
-
-        return () => {
-            clearInterval(interval)
-            console.log("timer cleared")
-        };
-    }, [timer]);
+        const interval = setInterval(
+            () => setTimer((currentTimer) => currentTimer + 1),
+            1000
+        );
+    })
 
     return <div>{timer}</div>;
 };

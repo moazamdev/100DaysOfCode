@@ -21,6 +21,7 @@ import AsyncStateButton from "./components/day8/async-state-button";
 import ToggleEffect from "./components/day8/toggleEffect";
 import ToggleWithTitle from "./components/day8/useEffectToggleWithTitle";
 import TimerComponent from "./components/day8/timer";
+import Stopwatch from "./components/day8/stopwatch";
 
 const App = () => {
 	return (
@@ -29,7 +30,8 @@ const App = () => {
 			{/* <AsyncStateButton/>
 			<ToggleEffect /> */}
 			{/* <ToggleWithTitle /> */}
-			<TimerComponent />
+			{/* <TimerComponent /> */}
+			<Stopwatch />
 
 			{/* Day 7 */}
 			{/* <Todo2 /> */}
