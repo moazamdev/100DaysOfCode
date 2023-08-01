@@ -19,13 +19,15 @@ import React from "react";
 
 import AsyncStateButton from "./components/day8/async-state-button";
 import ToggleEffect from "./components/day8/toggleEffect";
+import ToggleWithTitle from "./components/day8/useEffectToggleWithTitle";
 
 const App = () => {
 	return (
 		<>
 			{/* Day 8 */}
-			<AsyncStateButton/>
-			<ToggleEffect />
+			{/* <AsyncStateButton/>
+			<ToggleEffect /> */}
+			<ToggleWithTitle />
 
 			{/* Day 7 */}
 			{/* <Todo2 /> */}
