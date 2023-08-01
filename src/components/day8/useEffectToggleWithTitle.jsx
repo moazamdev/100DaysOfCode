@@ -1,37 +1,39 @@
 import React from "react"
 
 const ToggleWithTitle = () => {
-    const [toggle, setToggle] = React.useState(true);
-  
-    const handleToggle = () => {
-      setToggle(!toggle);
-    };
-  
-    return <Toggler toggle={toggle} onToggle={handleToggle} />;
+  const [toggle, setToggle] = React.useState(true);
+
+  const handleToggle = () => {
+    setToggle(!toggle);
   };
 
-  const Toggler = ({ toggle, onToggle }) => {
-    const [title, setTitle] = React.useState('Hello React');
-  
-    React.useEffect(() => {
-      console.log('I run if toggle or title change (and on mount).');
-    }, [toggle, title]);
-  
-    const handleChange = (event) => {
-      setTitle(event.target.value);
-    };
-  
-    return (
-      <div>
-        <input type="text" value={title} onChange={handleChange} />
-  
-        <button type="button" onClick={onToggle}>
-          Toggle
-        </button>
-  
-        {toggle && <div>{title}</div>}
-      </div>
-    );
-  };
+  return <Toggler toggle={toggle} onToggle={handleToggle} />;
+};
 
-  export default ToggleWithTitle;
+const Toggler = ({ toggle, onToggle }) => {
+  const calledOnce = React.useRef(false);
+
+  React.useEffect(() => {
+    if (calledOnce.current) {
+      return;
+    }
+
+    if (toggle === false) {
+      console.log('I run only once if toggle is false.');
+
+      calledOnce.current = true;
+    }
+  }, [toggle]);
+
+  return (
+    <div>
+      <button type="button" onClick={onToggle}>
+        Toggle
+      </button>
+
+      {toggle && <div>Hello React</div>}
+    </div>
+  );
+};
+
+export default ToggleWithTitle;
