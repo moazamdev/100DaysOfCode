@@ -24,6 +24,7 @@ import React from "react";
 // import Stopwatch from "./components/day8/stopwatch";
 
 import { SaveButton, StatusBar } from "./components/day9/network-checker";
+import Form from "./components/day9/form-input";
 
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
 			{/* Day 9 */}
 			<SaveButton />
 			<StatusBar />
+			<Form />
 
 			{/* Day 8 */}
 			{/* <AsyncStateButton/>
