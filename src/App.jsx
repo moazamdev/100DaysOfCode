@@ -17,21 +17,28 @@ import React from "react";
 // import Todo from "./components/day7/todoapp";
 // import Todo2 from "./components/day7/composition-todoapp";
 
-import AsyncStateButton from "./components/day8/async-state-button";
-import ToggleEffect from "./components/day8/toggleEffect";
-import ToggleWithTitle from "./components/day8/useEffectToggleWithTitle";
-import TimerComponent from "./components/day8/timer";
-import Stopwatch from "./components/day8/stopwatch";
+// import AsyncStateButton from "./components/day8/async-state-button";
+// import ToggleEffect from "./components/day8/toggleEffect";
+// import ToggleWithTitle from "./components/day8/useEffectToggleWithTitle";
+// import TimerComponent from "./components/day8/timer";
+// import Stopwatch from "./components/day8/stopwatch";
+
+import { SaveButton, StatusBar } from "./components/day9/network-checker";
+
 
 const App = () => {
 	return (
 		<>
+			{/* Day 9 */}
+			<SaveButton />
+			<StatusBar />
+
 			{/* Day 8 */}
 			{/* <AsyncStateButton/>
 			<ToggleEffect /> */}
 			{/* <ToggleWithTitle /> */}
 			{/* <TimerComponent /> */}
-			<Stopwatch />
+			{/* <Stopwatch /> */}
 
 			{/* Day 7 */}
 			{/* <Todo2 /> */}
