@@ -23,17 +23,22 @@ import React from "react";
 // import TimerComponent from "./components/day8/timer";
 // import Stopwatch from "./components/day8/stopwatch";
 
-import { SaveButton, StatusBar } from "./components/day9/network-checker";
-import Form from "./components/day9/form-input";
+// import { SaveButton, StatusBar } from "./components/day9/network-checker";
+// import Form from "./components/day9/form-input";
+
+import TheFather from "./components/day10/parent-component";
 
 
 const App = () => {
 	return (
 		<>
 			{/* Day 9 */}
-			<SaveButton />
+			<TheFather />
+
+			{/* Day 9 */}
+			{/* <SaveButton />
 			<StatusBar />
-			<Form />
+			<Form /> */}
 
 			{/* Day 8 */}
 			{/* <AsyncStateButton/>
