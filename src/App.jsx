@@ -26,14 +26,19 @@ import React from "react";
 // import { SaveButton, StatusBar } from "./components/day9/network-checker";
 // import Form from "./components/day9/form-input";
 
-import TheFather from "./components/day10/parent-component";
-
+// import TheFather from "./components/day10/parent-component";
+import CourseForm from "./components/day24/app/CourseForm";
+import CourseList from "./components/day24/app/CourseList";
 
 const App = () => {
 	return (
 		<>
-			{/* Day 9 */}
-			<TheFather />
+			{/* Day 24 */}
+			<CourseForm />
+			<CourseList />
+
+			{/* Day 10 */}
+			{/* <TheFather /> */}
 
 			{/* Day 9 */}
 			{/* <SaveButton />
