@@ -4,7 +4,7 @@ import Task from "./Task";
 import classNames from "classnames";
 import "./column.css";
 
-export default function Column({ state }) {
+const Column = ({ state }) => {
 	const [currentTask, setCurrentTask] = useState("");
 	const [drop, setDrop] = useState(false);
 
@@ -92,4 +92,6 @@ export default function Column({ state }) {
 			))}
 		</div>
 	);
-}
+};
+
+export default Column;
