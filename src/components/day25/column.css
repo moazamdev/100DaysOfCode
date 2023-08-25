@@ -1,0 +1,7 @@
+.column {
+	border: 2px dashed transparent;
+	background-color: aliceblue;
+}
+.column.drop {
+	border-color: #ccc;
+}

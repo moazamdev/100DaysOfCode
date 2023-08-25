@@ -27,15 +27,25 @@ import React from "react";
 // import Form from "./components/day9/form-input";
 
 // import TheFather from "./components/day10/parent-component";
-import CourseForm from "./components/day24/app/CourseForm";
-import CourseList from "./components/day24/app/CourseList";
+// import CourseForm from "./components/day24/app/CourseForm";
+// import CourseList from "./components/day24/app/CourseList";
+
+import Column from "./components/day25/column";
 
 const App = () => {
 	return (
 		<>
+			{/* Day 25 */}
+			<div style={{ display: "flex", justifyContent: "center" }}>
+				<h1>Task Tracker</h1>
+			</div>
+			<Column state={"PLANNED"} />
+			<Column state={"ONGOING"} />
+			<Column state={"DONE"} />
+
 			{/* Day 24 */}
-			<CourseForm />
-			<CourseList />
+			{/* <CourseForm />
+			<CourseList /> */}
 
 			{/* Day 10 */}
 			{/* <TheFather /> */}

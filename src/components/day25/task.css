@@ -1,0 +1,19 @@
+.task {
+	position: "absolute";
+	bottom: ".5rem";
+	right: ".5rem";
+	font-size: ".8rem";
+	padding: ".2rem .5rem";
+	border-radius: ".5rem";
+    background: #333;
+}
+
+.PLANNED {
+    background: #333;
+}
+.ONGOING {
+	background: #8f5800;
+}
+.DONE {
+	background: #00641b;
+}
