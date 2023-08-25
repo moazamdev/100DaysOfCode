@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { useStore } from "./store";
+import { useStore } from "../../store";
 import "./task.css";
 
 export default function Task({ title, state }) {
@@ -44,7 +44,7 @@ export default function Task({ title, state }) {
 				onClick={() => deleteTask(title)}
 			/>
 			<div>{title}</div>
-			<div style={statusStyles} className={classNames("task", { state })}>
+			<div style={statusStyles} className={state}>
 				<div>{state}</div>
 			</div>
 		</div>

@@ -30,18 +30,29 @@ import React from "react";
 // import CourseForm from "./components/day24/app/CourseForm";
 // import CourseList from "./components/day24/app/CourseList";
 
-import Column from "./components/day25/column";
+// import Column from "./components/day25/column";
+
+import TaskTracker from "./components/day25/TaskTracker";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
 	return (
 		<>
 			{/* Day 25 */}
-			<div style={{ display: "flex", justifyContent: "center" }}>
-				<h1>Task Tracker</h1>
-			</div>
-			<Column state={"PLANNED"} />
-			<Column state={"ONGOING"} />
-			<Column state={"DONE"} />
+			<BrowserRouter>
+				<Routes>
+					<Route path="/">
+						<Route
+							index
+							element={
+								<h2>Welcome to my 100DaysOfCode Challenge</h2>
+							}
+						/>
+						<Route path="task-tracker" element={<TaskTracker />} />
+					</Route>
+				</Routes>
+			</BrowserRouter>
+			{/* <TaskTracker /> */}
 
 			{/* Day 24 */}
 			{/* <CourseForm />

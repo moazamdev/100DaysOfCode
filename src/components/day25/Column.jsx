@@ -1,8 +1,8 @@
 import { useMemo, useState } from "react";
-import { useStore } from "./store";
+import { useStore } from "../../store";
 import Task from "./Task";
 import classNames from "classnames";
-import "./column.css"
+import "./column.css";
 
 export default function Column({ state }) {
 	const [currentTask, setCurrentTask] = useState("");
