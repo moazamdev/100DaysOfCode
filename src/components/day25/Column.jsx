@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { useStore } from "../../store";
-import Task from "./Task";
+import Task from "./task";
 import classNames from "classnames";
 import "./column.css";
 

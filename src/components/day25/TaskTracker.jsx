@@ -1,6 +1,5 @@
 import Column from "./column";
 
-
 const TaskTracker = () => {
 	return (
 		<>

@@ -37,7 +37,7 @@ export default function Task({ title, state }) {
 			onDragStart={() => setDraggedTask(title)}
 		>
 			<img
-				src="src\assets\trash.png"
+				src="../src/assets/trash.png"
 				width={"30px"}
 				height={"auto"}
 				style={{ cursor: "pointer", marginRight: "1em" }}
