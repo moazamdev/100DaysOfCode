@@ -33,6 +33,7 @@ import React from "react";
 // import Column from "./components/day25/column";
 
 import TaskTracker from "./components/day25/TaskTracker";
+import APIApp from "./components/day29/app";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
@@ -49,6 +50,7 @@ const App = () => {
 							}
 						/>
 						<Route path="task-tracker" element={<TaskTracker />} />
+						<Route path="api-calls" element={<APIApp />} />
 					</Route>
 				</Routes>
 			</BrowserRouter>

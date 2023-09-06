@@ -1,0 +1,21 @@
+.myListItem
+{
+    background-color: rgb(51, 51, 51);
+    border: 1px solid rgb(107, 107, 107);
+    padding: 1em 2em;
+    list-style-type: none;
+    margin-bottom: .5em;
+    transition: .2s ease-in-out;
+    &:hover
+    {
+        background-color: rgb(61, 61, 61);
+    }
+
+    & > a {
+        color: whitesmoke;
+
+        &:hover {
+            color: rgb(206, 206, 206);
+        }
+    }
+}
