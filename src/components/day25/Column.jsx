@@ -4,7 +4,7 @@ import Task from "./task";
 import classNames from "classnames";
 import "./column.css";
 
-const Column = ({ state }) => {
+const MyColumn = ({ state }) => {
 	const [currentTask, setCurrentTask] = useState("");
 	const [drop, setDrop] = useState(false);
 
@@ -94,4 +94,4 @@ const Column = ({ state }) => {
 	);
 };
 
-export default Column;
+export default MyColumn;

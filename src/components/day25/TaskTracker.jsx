@@ -1,4 +1,4 @@
-import Column from "./column";
+import MyColumn from "./column";
 
 const TaskTracker = () => {
 	return (
@@ -6,9 +6,9 @@ const TaskTracker = () => {
 			<div style={{ display: "flex", justifyContent: "center" }}>
 				<h1>Task Tracker</h1>
 			</div>
-			<Column state={"PLANNED"} />
-			<Column state={"ONGOING"} />
-			<Column state={"DONE"} />
+			<MyColumn state={"PLANNED"} />
+			<MyColumn state={"ONGOING"} />
+			<MyColumn state={"DONE"} />
 		</>
 	);
 };

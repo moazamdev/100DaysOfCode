@@ -39,7 +39,7 @@ const App = () => {
 	return (
 		<>
 			{/* Day 25 */}
-			{/* <BrowserRouter>
+			<BrowserRouter>
 				<Routes>
 					<Route path="/">
 						<Route
@@ -51,8 +51,8 @@ const App = () => {
 						<Route path="task-tracker" element={<TaskTracker />} />
 					</Route>
 				</Routes>
-			</BrowserRouter> */}
-			<TaskTracker />
+			</BrowserRouter>
+			{/* <TaskTracker /> */}
 
 			{/* Day 24 */}
 			{/* <CourseForm />
