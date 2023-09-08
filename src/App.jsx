@@ -34,7 +34,7 @@ import React from "react";
 
 import TaskTracker from "./components/day25/TaskTracker";
 import APIApp from "./components/day29/app";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import PaginationComponent from "./components/day31/pagination-component";
 import GithubApp from "./components/day31/covid-component";
 
@@ -50,7 +50,18 @@ const App = () => {
 						<Route
 							index
 							element={
-								<h2>Welcome to my 100DaysOfCode Challenge</h2>
+								<>
+									<h2>
+										Welcome to my 100DaysOfCode Challenge
+									</h2>
+									<Link to={"/task-tracker"}>
+										TaskTracker
+									</Link>
+									<Link to={"/api-calls"}>APIApp</Link>
+									<Link to={"/pagination"}>
+										PaginationComponent
+									</Link>
+								</>
 							}
 						/>
 						<Route path="task-tracker" element={<TaskTracker />} />
