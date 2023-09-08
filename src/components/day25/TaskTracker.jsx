@@ -2,7 +2,7 @@ import React, { useMemo, useState } from "react";
 import { Helmet } from "react-helmet";
 
 import { useStore } from "../../store";
-import Task from "./task";
+// import Task from "./task";
 import classNames from "classnames";
 import "./column.css";
 
