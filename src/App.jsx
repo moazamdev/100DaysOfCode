@@ -35,8 +35,12 @@ import React from "react";
 import TaskTracker from "./components/day25/TaskTracker";
 import APIApp from "./components/day29/app";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import PaginationComponent from "./components/day31/pagination-component";
+import GithubApp from "./components/day31/covid-component";
 
 const App = () => {
+	const latitude = 40.7128;
+	const longitude = -74.006;
 	return (
 		<>
 			{/* Day 25 */}
@@ -51,6 +55,11 @@ const App = () => {
 						/>
 						<Route path="task-tracker" element={<TaskTracker />} />
 						<Route path="api-calls" element={<APIApp />} />
+						<Route
+							path="pagination"
+							element={<PaginationComponent />}
+						/>
+						<Route path="covid" element={<GithubApp />} />
 					</Route>
 				</Routes>
 			</BrowserRouter>
